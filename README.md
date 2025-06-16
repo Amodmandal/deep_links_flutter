@@ -24,24 +24,20 @@ ADB: Android Debug Bridge for testing deep links.
 Setup Instructions
 
 1. Clone the Repository
-git clone https://github.com/Amodmandal/deep_links_flutter.git
+-git clone https://github.com/Amodmandal/deep_links_flutter.git
+-cd your-repo
 
-cd your-repo
-
-3. Install Dependencies
+2 Install Dependencies
 Ensure you have Flutter installed, then run:
 flutter pub get
 
 This installs:
 
-
-get: ^4.7.2
-
-app_links: ^6.4.0
+-get: ^4.7.2
+-app_links: ^6.4.0
 
 3. Configure Android
-4. 
-The AndroidManifest.xml is pre-configured to handle http://foo.com.
+4. The AndroidManifest.xml is pre-configured to handle http://foo.com.
 Verify in android/app/src/main/AndroidManifest.xml:
 
 <intent-filter>
@@ -51,9 +47,9 @@ Verify in android/app/src/main/AndroidManifest.xml:
     <data android:scheme="myapp" android:host="foo" />
 </intent-filter>
 
-6. Run the App
+5. Run the App
 Connect an Android device (with USB Debugging enabled) or start an emulator:
-flutter run
+-flutter run
 
 Testing Deep Links
 Test the deep link myapp://foo.com using one of these methods:
