@@ -2,12 +2,16 @@ Flutter Deep Linking App (Android)
 This is a Flutter project demonstrating deep linking on Android using the app_links package and GetX for navigation. The app handles the custom URI scheme http://foo.com.
 
 Features
+
+
 Deep linking with custom URI scheme (http://foo.com).
 Navigation using GetX (^4.7.2).
 Deep link handling with app_links (^6.4.0).
 Displays on the target page.
 
 Prerequisites
+
+
 Flutter: Version 3.0.0 or higher.
 Android Studio: For emulator and ADB setup.
 Android Device/Emulator: API 21 or higher with USB Debugging enabled for physical devices.
