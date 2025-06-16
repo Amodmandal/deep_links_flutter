@@ -33,11 +33,17 @@ Ensure you have Flutter installed, then run:
 flutter pub get
 
 This installs:
+
+
 get: ^4.7.2
+
 app_links: ^6.4.0
 
 3. Configure Android
-The AndroidManifest.xml is pre-configured to handle myapp://foo. Verify in android/app/src/main/AndroidManifest.xml:
+4. 
+The AndroidManifest.xml is pre-configured to handle http://foo.com.
+Verify in android/app/src/main/AndroidManifest.xml:
+
 <intent-filter>
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.DEFAULT" />
@@ -45,7 +51,7 @@ The AndroidManifest.xml is pre-configured to handle myapp://foo. Verify in andro
     <data android:scheme="myapp" android:host="foo" />
 </intent-filter>
 
-4. Run the App
+6. Run the App
 Connect an Android device (with USB Debugging enabled) or start an emulator:
 flutter run
 
@@ -57,6 +63,7 @@ Test the deep link:adb shell am start -W -a android.intent.action.VIEW -d "http:
 Replace com.example.myapp with your app’s package name (in android/app/build.gradle).
 
 Expected Result: The app opens, navigates to signinpage.
+
 Method 2: Using Browser
 
 Open Chrome on your Android device/emulator.
